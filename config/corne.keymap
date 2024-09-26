@@ -16,6 +16,13 @@
             bindings = <&kp LEFT_ALT &kp H &kp V>;
             label = "PASTESPECIAL";
         };
+
+        Borders: Borders {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp H &kp B>;
+            label = "BORDERS";
+        };
     };
 
     keymap {
@@ -29,10 +36,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R      &kp T            &kp Y       &kp U      &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D  &kp F      &kp G            &kp H       &kp J      &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z  &kp X  &kp C  &kp V      &kp B            &kp N       &kp M      &kp COMMA  &kp DOT  &kp ESC   &trans
-                      &mo 1  &kp SPACE  &kp BACKSPACE    &kp DELETE  &kp ENTER  &mo 2
+&trans  &kp Q  &kp W  &kp E  &kp R      &kp T            &kp Y           &kp U      &kp I      &kp O    &kp P     &trans
+&trans  &kp A  &kp S  &kp D  &kp F      &kp G            &kp H           &kp J      &kp K      &kp L    &kp SEMI  &trans
+&trans  &kp Z  &kp X  &kp C  &kp V      &kp B            &kp N           &kp M      &kp COMMA  &kp DOT  &kp ESC   &trans
+                      &mo 1  &kp SPACE  &kp BACKSPACE    &kp LEFT_SHIFT  &kp ENTER  &mo 2
             >;
         };
 
@@ -44,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans     &trans  &trans     &trans     &trans           &trans         &trans          &kp UP_ARROW  &trans     &trans     &trans
-&trans  &trans     &trans  &trans     &trans     &trans           &trans         &kp LEFT_ARROW  &kp UP        &kp RIGHT  &trans     &trans
-&trans  &kp LC(Z)  &trans  &kp LC(X)  &kp LC(C)  &kp LC(P)        &PasteSpecial  &trans          &trans        &trans     &kp LC(Y)  &trans
-                           &trans     &kp SPACE  &kp BACKSPACE    &kp DEL        &kp ENTER       &mo 3
+&trans  &trans     &trans  &trans     &trans     &kp LEFT_ALT    &kp RIGHT_ALT   &trans          &kp UP_ARROW  &trans     &trans     &trans
+&trans  &trans     &trans  &trans     &trans     &kp LEFT_GUI    &trans          &kp LEFT_ARROW  &kp UP        &kp RIGHT  &trans     &trans
+&trans  &kp LC(Z)  &trans  &kp LC(X)  &kp LC(C)  &kp LC(P)       &PasteSpecial   &Borders        &kp LS(F2)    &trans     &kp LC(Y)  &trans
+                           &trans     &kp SPACE  &kp DEL         &kp LEFT_SHIFT  &kp ENTER       &mo 3
             >;
         };
 
@@ -59,19 +66,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND     &kp DOLLAR    &kp PERCENT      &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE        &kp TILDE     &kp QUESTION  &kp PLUS      &kp MINUS        &kp EQUAL     &kp UNDER      &kp KP_SLASH  &kp BACKSLASH         &kp PIPE               &trans
-                                       &trans        &kp SPACE     &kp BACKSPACE    &kp DEL       &kp ENTER      &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0      &trans
+&trans  &kp GRAVE     &kp TILDE     &kp POUND     &kp DOLLAR    &kp PERCENT      &kp MINUS         &kp PLUS           &kp EQUAL     &kp QUESTION   &kp SINGLE_QUOTE  &trans
+&trans  &trans        &trans        &trans        &trans        &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_SLASH  &kp BACKSLASH  &kp ESCAPE        &trans
+                                    &trans        &kp SPACE     &kp BACKSPACE    &kp LEFT_SHIFT    &kp ENTER          &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_CLR    &kp C_VOLUME_UP  &trans              &kp LG(UP_ARROW)    &trans               &trans  &trans
-&trans  &trans        &trans        &trans        &trans  &trans        &kp C_VOL_DN     &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans  &to 4         &to 5         &trans        &trans  &trans        &kp K_MUTE       &trans              &trans              &trans               &trans  &trans
-                                    &trans        &trans  &trans        &trans           &trans              &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_CLR    &kp C_VOLUME_UP  &kp LA(LS(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LA(LS(RIGHT))    &trans  &trans
+&trans  &trans        &trans        &trans        &trans  &trans        &kp C_VOL_DN     &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
+&trans  &to 4         &to 5         &trans        &trans  &trans        &kp K_MUTE       &trans                  &trans              &trans               &trans  &trans
+                                    &trans        &trans  &trans        &trans           &trans                  &trans
             >;
         };
 
