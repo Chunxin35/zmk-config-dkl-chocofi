@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans     &trans  &trans     &trans     &kp LEFT_ALT    &kp RIGHT_ALT   &trans          &kp UP_ARROW  &trans     &trans     &trans
-&trans  &trans     &trans  &trans     &trans     &kp LEFT_GUI    &trans          &kp LEFT_ARROW  &kp UP        &kp RIGHT  &trans     &trans
-&trans  &kp LC(Z)  &trans  &kp LC(X)  &kp LC(C)  &kp LC(P)       &PasteSpecial   &Borders        &kp LS(F2)    &trans     &kp LC(Y)  &trans
-                           &trans     &kp SPACE  &kp DEL         &kp LEFT_SHIFT  &kp ENTER       &mo 3
+&trans  &kp HOME   &kp PAGE_UP    &trans     &trans     &kp LEFT_ALT    &kp RIGHT_ALT   &trans          &kp UP_ARROW  &trans     &trans     &trans
+&trans  &kp END    &kp PAGE_DOWN  &trans     &trans     &kp LEFT_GUI    &trans          &kp LEFT_ARROW  &kp UP        &kp RIGHT  &trans     &trans
+&trans  &kp LC(Z)  &trans         &kp LC(X)  &kp LC(C)  &kp LC(P)       &PasteSpecial   &Borders        &kp LS(F2)    &trans     &kp LC(Y)  &trans
+                                  &trans     &kp SPACE  &kp DEL         &kp LEFT_SHIFT  &kp ENTER       &mo 3
             >;
         };
 
@@ -68,7 +68,7 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0      &trans
 &trans  &kp GRAVE     &kp TILDE     &kp POUND     &kp DOLLAR    &kp PERCENT      &kp MINUS         &kp PLUS           &kp EQUAL     &kp QUESTION   &kp SINGLE_QUOTE  &trans
-&trans  &trans        &trans        &trans        &trans        &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH     &kp BACKSLASH  &kp ESCAPE        &trans
+&trans  &kp F8        &kp F9        &kp F10       &kp F2        &kp F4           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH     &kp BACKSLASH  &kp ESCAPE        &trans
                                     &trans        &kp SPACE     &kp BACKSPACE    &kp LEFT_SHIFT    &kp ENTER          &trans
             >;
         };
