@@ -44,10 +44,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5           &kp N6         &kp N7          &kp UP_ARROW  &kp N9     &kp N0     &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR       &trans         &kp LEFT_ARROW  &kp UP        &kp RIGHT  &trans     &trans
-&trans  &kp LC(Z)     &trans        &kp LC(X)     &kp LC(C)     &kp LC(P)        &PasteSpecial  &trans          &trans        &trans     &kp LC(Y)  &trans
-                                    &trans        &kp SPACE     &kp BACKSPACE    &kp DEL        &kp ENTER       &mo 3
+&trans  &trans     &trans  &trans     &trans     &trans           &trans         &trans          &kp UP_ARROW  &trans     &trans     &trans
+&trans  &trans     &trans  &trans     &trans     &trans           &trans         &kp LEFT_ARROW  &kp UP        &kp RIGHT  &trans     &trans
+&trans  &kp LC(Z)  &trans  &kp LC(X)  &kp LC(C)  &kp LC(P)        &PasteSpecial  &trans          &trans        &trans     &kp LC(Y)  &trans
+                           &trans     &kp SPACE  &kp BACKSPACE    &kp DEL        &kp ENTER       &mo 3
             >;
         };
 
@@ -70,8 +70,26 @@
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_CLR    &kp C_VOLUME_UP  &trans              &kp LG(UP_ARROW)    &trans               &trans  &trans
 &trans  &trans        &trans        &trans        &trans  &trans        &kp C_VOL_DN     &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans  &trans        &trans        &trans        &trans  &trans        &kp K_MUTE       &trans              &trans              &trans               &trans  &trans
+&trans  &to 4         &to 5         &trans        &trans  &trans        &kp K_MUTE       &trans              &trans              &trans               &trans  &trans
                                     &trans        &trans  &trans        &trans           &trans              &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
