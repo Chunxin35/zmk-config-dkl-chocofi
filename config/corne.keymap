@@ -51,7 +51,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &mt LC(HOME) HOME  &kp PAGE_UP    &trans     &kp LEFT_SHIFT  &kp LEFT_ALT    &kp RIGHT_ALT   &trans                   &mt LC(UP_ARROW) UP_ARROW  &trans               &kp LS(SPACE)  &trans
+&trans  &mt LC(HOME) HOME  &kp PAGE_UP    &trans     &kp LEFT_SHIFT  &trans          &kp RIGHT_ALT   &trans                   &mt LC(UP_ARROW) UP_ARROW  &trans               &kp LS(SPACE)  &trans
 &trans  &mt LC(END) END    &kp PAGE_DOWN  &kp LCTRL  &kp LEFT_ALT    &kp LEFT_GUI    &kp LC(F)       &mt LC(LEFT_ARROW) LEFT  &mt LC(DOWN) DOWN          &mt LC(RIGHT) RIGHT  &kp LC(SPACE)  &trans
 &trans  &kp LC(Z)          &trans         &kp LC(X)  &kp LC(C)       &kp LC(V)       &PasteSpecial   &Borders                 &kp LS(F2)                 &trans               &kp LC(Y)      &trans
                                           &trans     &kp SPACE       &kp DEL         &kp LEFT_SHIFT  &kp ENTER                &mo 3
