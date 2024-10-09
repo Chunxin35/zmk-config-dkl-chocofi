@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LC(W)  &kp LC(O)  &trans        &trans     &trans          &kp LC(H)       &kp HOME        &kp UP_ARROW  &kp END      &kp LS(SPACE)  &trans
-&trans  &kp LC(A)  &kp LC(S)  &kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT    &kp LC(F)       &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp LC(SPACE)  &trans
-&trans  &kp LC(Z)  &kp LC(Y)  &kp LC(X)     &kp LC(C)  &kp LC(V)       &PasteSpecial   &Borders        &kp LS(F2)    &kp PAGE_UP  &kp PAGE_DOWN  &trans
-                              &trans        &kp SPACE  &kp DEL         &kp LEFT_SHIFT  &kp ENTER       &mo 3
+&trans  &kp LC(W)  &kp LC(O)  &trans        &trans     &trans          &kp LC(H)      &kp HOME        &kp UP_ARROW  &kp END      &kp LS(SPACE)  &trans
+&trans  &kp LC(A)  &kp LC(S)  &kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT    &kp LC(F)      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &kp LC(SPACE)  &trans
+&trans  &kp LC(Z)  &kp LC(Y)  &kp LC(X)     &kp LC(C)  &kp LC(V)       &PasteSpecial  &Borders        &kp LS(F2)    &kp PAGE_UP  &kp PAGE_DOWN  &trans
+                              &trans        &kp SPACE  &kp DEL         &kp TAB        &kp ENTER       &mo 3
             >;
         };
 
@@ -69,7 +69,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0      &trans
 &trans  &kp GRAVE     &kp TILDE     &kp POUND       &kp DOLLAR    &kp PERCENT      &kp MINUS         &kp PLUS           &kp EQUAL     &kp QUESTION   &kp SINGLE_QUOTE  &trans
 &trans  &kp F8        &kp F9        &kp F10         &kp F2        &kp F4           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH     &kp BACKSLASH  &kp ESCAPE        &trans
-                                    &kp LEFT_SHIFT  &kp SPACE     &kp BACKSPACE    &kp TAB           &kp ENTER          &trans
+                                    &kp LEFT_SHIFT  &kp SPACE     &kp BACKSPACE    &trans            &kp ENTER          &trans
             >;
         };
 
