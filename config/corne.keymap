@@ -69,7 +69,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0      &trans
 &trans  &kp GRAVE     &kp TILDE     &kp POUND       &kp DOLLAR    &kp PERCENT      &kp MINUS         &kp PLUS           &kp EQUAL     &kp QUESTION   &kp SINGLE_QUOTE  &trans
 &trans  &kp F8        &kp F9        &kp F10         &kp F2        &kp F4           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH     &kp BACKSLASH  &kp ESCAPE        &trans
-                                    &kp LEFT_SHIFT  &kp LCTRL     &kp BACKSPACE    &trans            &kp ENTER          &trans
+                                    &kp LEFT_SHIFT  &kp SPACE     &kp BACKSPACE    &trans            &kp ENTER          &trans
             >;
         };
 
